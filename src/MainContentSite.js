@@ -1,0 +1,51 @@
+import React, { Component } from 'react';
+import { Container, Grid, Menu, Label, Header, Sticky} from 'semantic-ui-react'
+import Project1 from './Proj1'
+
+export default class MainContentSite extends Component {
+	constructor (props) {
+		super(props);
+		this.state = { activeItem: 'proj1' };
+		this.handleItemClick = this.handleItemClick.bind(this);
+		this.handleContextRef = this.handleContextRef.bind(this);
+	}
+	handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+	handleContextRef = contextRef => this.setState({ contextRef })
+
+	render () {
+		const { contextRef } = this.state;
+		const titleStyle = {
+			padding: 15
+		};
+		return (
+			<Container fluid>
+				<Grid centered columns={3}>
+					<Grid.Column width={4}>
+						<Sticky content={contextRef} offset={200}>
+							<Header style={titleStyle}>Click me to navigate!</Header>
+							<Menu pointing secondary vertical>
+								<Menu.Item name='proj1' active={this.state.activeItem === 'proj1'} onClick={this.handleItemClick}>
+									Project 1
+								</Menu.Item>
+
+								<Menu.Item name='proj2' active={this.state.activeItem === 'proj2'} onClick={this.handleItemClick}>
+									Project 2
+								</Menu.Item>
+
+								<Menu.Item name='proj3' active={this.state.activeItem === 'proj3'} onClick={this.handleItemClick}>
+									Project 3
+								</Menu.Item>
+							</Menu>
+						</Sticky>
+					</Grid.Column>
+					<Grid.Column width={8}>
+						{this.state.activeItem==='proj1' ? <Project1/> : null}
+					</Grid.Column>
+					<Grid.Column width={4}>
+						{/*//Placeholder*/}
+					</Grid.Column>
+				</Grid>
+			</Container>
+		);
+	}
+}

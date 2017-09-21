@@ -1,0 +1,11 @@
+.ContainerCSS {
+    height:inherit;
+    width:inherit;
+}
+
+.GridCSS {
+    overflow-y: hidden;
+    position:fixed;
+    top: 40%;
+    margin-top: -20em;
+}
