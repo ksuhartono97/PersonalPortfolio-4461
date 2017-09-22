@@ -9,16 +9,26 @@ import './App.css';
 import FirstTime from "./FirstTime";
 import MainContentSite from "./MainContentSite"
 import IntroPage from "./IntroPage"
+import Cookies from 'universal-cookie'
+
+const cookies = new Cookies();
 
 
 class App extends Component {
+	componentWillMount() {
+		this.state = {
+			username: cookies.get('username') || null
+		};
+	}
+
   constructor(props) {
     super(props);
-    this.state = { username : null };
+    // this.state = { username : null };
     this.nameCallback = this.nameCallback.bind(this);
   }
 
 	nameCallback = (name) => {
+		cookies.set('username', name, { path: '/' });
 		this.setState({username : name})
     this.setState({activeItem : 'intro'})
 	};
