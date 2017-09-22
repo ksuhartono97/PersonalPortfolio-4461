@@ -74,7 +74,7 @@ export default class MainContentSite extends Component {
 					</Grid.Column>
 				</Grid>
 				{fireRedirect && (
-					<Redirect to={'/intro'}/>
+					<Redirect to={'/'}/>
 				)}
 			</Container>
 		);

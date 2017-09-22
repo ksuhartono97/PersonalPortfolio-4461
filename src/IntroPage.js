@@ -53,7 +53,7 @@ export default class IntroPage extends Component {
 											<Grid.Column>
 												<Header size="huge" textAlign="center" inverted color="grey">
 													Welcome {this.props.username}
-													<Header.Subheader inverted color="grey">
+													<Header.Subheader>
 														Choose any of the projects below to start finding out!
 													</Header.Subheader>
 												</Header>

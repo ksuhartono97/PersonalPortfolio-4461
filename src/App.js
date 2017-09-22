@@ -27,9 +27,9 @@ class App extends Component {
     return (
       <Router>
         <div>
-					{this.state.username === null ? <FirstTime callbackFromParent={this.nameCallback} /> : null}
+					{this.state.username === null ?<FirstTime callbackFromParent={this.nameCallback} /> : null}
 					{this.state.username !== null ?
-            <Route path="/intro" component={() => (
+            <Route exact path="/" component={() => (
               <IntroPage username={this.state.username}/>
 						)}/> : null }
 					{this.state.username !== null ?
