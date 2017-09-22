@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Container, Grid, Header, List } from 'semantic-ui-react'
+import { Container, Grid, Header, List, Image } from 'semantic-ui-react'
+import Dog from './img/dog.jpeg';
 
 export default class Project1 extends Component {
 	render () {
@@ -30,27 +31,31 @@ export default class Project1 extends Component {
 											Sed lacinia vestibulum feugiat. Cras imperdiet posuere lectus ut faucibus. Pellentesque varius quam sed risus luctus, in lobortis quam gravida. Nam a imperdiet justo. Cras vulputate fringilla tempor. Nunc condimentum arcu vel sollicitudin eleifend. Fusce urna metus, cursus a magna id, laoreet aliquet enim. Etiam ut enim eleifend, fermentum lorem ac, feugiat arcu. Morbi elementum vitae mauris id imperdiet. Aliquam mauris ex, varius ut velit eu, pellentesque convallis augue. Praesent lacinia vehicula tortor, eu commodo tellus lacinia et. Duis in tincidunt mauris. Sed auctor finibus metus nec posuere.
 										</p>
 									</Grid.Row>
-									<Grid.Row>
-										<List bulleted>
-											<List.Item>Loren</List.Item>
-											<List.Item>Loren ipsum</List.Item>
-											<List.Item>
-												Loren ipsum
-												<List.List>
-													<List.Item>
-														Loren ipsum
-													</List.Item>
-													<List.Item>
-														Loren ipsum
-													</List.Item>
-													<List.Item>
-														Loren ipsum
-													</List.Item>
-												</List.List>
-											</List.Item>
-											<List.Item>Loren ipsum dolor sit</List.Item>
-
-										</List>
+									<Grid.Row columns={2}>
+										<Grid.Column>
+											<List bulleted>
+												<List.Item>Loren</List.Item>
+												<List.Item>Loren ipsum</List.Item>
+												<List.Item>
+													Loren ipsum
+													<List.List>
+														<List.Item>
+															Loren ipsum
+														</List.Item>
+														<List.Item>
+															Loren ipsum
+														</List.Item>
+														<List.Item>
+															Loren ipsum
+														</List.Item>
+													</List.List>
+												</List.Item>
+												<List.Item>Loren ipsum dolor sit</List.Item>
+											</List>
+										</Grid.Column>
+										<Grid.Column>
+											<Image src={Dog} fluid/>
+										</Grid.Column>
 									</Grid.Row>
 									<Grid.Row>
 										<p>

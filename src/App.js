@@ -23,27 +23,20 @@ class App extends Component {
     this.setState({activeItem : 'intro'})
 	};
 
-  activeCallback = (name) => {
-
-  };
-
   render() {
     return (
       <Router>
         <div>
 					{this.state.username === null ? <FirstTime callbackFromParent={this.nameCallback} /> : null}
-					{/*{this.state.username === null ?*/}
-            {/*<Route exact path="/" component={() => (*/}
-              {/*<FirstTime callbackFromParent={this.nameCallback} />*/}
-						{/*)}/> : null }*/}
 					{this.state.username !== null ?
             <Route path="/intro" component={() => (
               <IntroPage username={this.state.username}/>
 						)}/> : null }
 					{this.state.username !== null ?
             <Route path="/proj" component={() => (
-              <MainContentSite/>
+              <MainContentSite username={this.state.username}/>
 						)}/> : null }
+						{/*<MainContentSite/>*/}
         </div>
       </Router>
     );
