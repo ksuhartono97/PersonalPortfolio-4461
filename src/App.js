@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 // import { Header, Input } from 'semantic-ui-react'
 import {
 	BrowserRouter as Router,
-	Route,
-	Link
+	Route
 } from 'react-router-dom'
 import './App.css';
 import FirstTime from "./FirstTime";

@@ -17,6 +17,7 @@ export default class About extends Component {
 							<p>I was part of the HKUST Robotics Team for 2 years.
 							Nowadays, I spend my time learning full-stack development and exploring the different frameworks that are
 							available to use in the Internet such as React.JS which is what this site is based on!</p>
+							<p>You've probably gotten bored of hearing about me now, click on the <b>dimmer part of the site</b> or <b>press escape</b> or the <b>X button</b> on the top right to close this!</p>
 						</Container>
 					</Grid.Column>
 				</Grid>
