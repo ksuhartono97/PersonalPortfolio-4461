@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Container, Grid, Menu, Header, Sticky, Message} from 'semantic-ui-react'
 import Project1 from './Proj1'
-import { Route, Link} from 'react-router-dom'
+import {Route, Link} from 'react-router-dom'
 
 
 export default class MainContentSite extends Component {
@@ -31,7 +31,6 @@ export default class MainContentSite extends Component {
 			width: "100%",
 			minHeight: "100vh",
 			backgroundColor: "rgba(0,0,0,.1)",
-			// backgroundImage: `url(${Background})`,
 			backgroundSize: "cover"
 		};
 
@@ -43,21 +42,24 @@ export default class MainContentSite extends Component {
 							<Header style={titleStyle}>Click me to navigate!</Header>
 							<Menu pointing secondary vertical>
 
-								<Menu.Item name="home">
-									<Link to="/">Home</Link>
-								</Menu.Item>
+								<Link to="/">
+									<Menu.Item name="home">
+									</Menu.Item>
+								</Link>
 
-								<Menu.Item name='proj1' active={this.state.activeItem === 'proj1'} onClick={this.handleItemClick}>
-									<Link to="/proj/proj1">Project 1</Link>
-								</Menu.Item>
+								<Link to="/proj/proj1">
+									<Menu.Item name='proj1' active={this.state.activeItem === 'proj1'} onClick={this.handleItemClick}>
+									</Menu.Item>
+								</Link>
 
-								<Menu.Item name='proj2' active={this.state.activeItem === 'proj2'} onClick={this.handleItemClick}>
-									<Link to="/proj/proj2">Project 2</Link>
-								</Menu.Item>
-
-								<Menu.Item name='proj3' active={this.state.activeItem === 'proj3'} onClick={this.handleItemClick}>
-									<Link to="/proj/proj3">Project 3</Link>
-								</Menu.Item>
+								<Link to="/proj/proj2">
+									<Menu.Item name='proj2' active={this.state.activeItem === 'proj2'} onClick={this.handleItemClick}>
+									</Menu.Item>
+								</Link>
+								<Link to="/proj/proj3">
+									<Menu.Item name='proj3' active={this.state.activeItem === 'proj3'} onClick={this.handleItemClick}>
+									</Menu.Item>
+								</Link>
 							</Menu>
 						</Sticky>
 					</Grid.Column>
