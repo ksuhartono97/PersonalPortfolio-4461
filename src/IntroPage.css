@@ -1,8 +1,8 @@
 .ContainerCSS {
-    height: inherit;
-    width: inherit;
+  height: inherit;
+  width: inherit;
 }
 
 .GridCSS {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
