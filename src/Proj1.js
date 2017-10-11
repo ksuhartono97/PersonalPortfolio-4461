@@ -1,6 +1,26 @@
 import React, { Component } from "react";
-import { Container, Grid, Header, List, Image } from "semantic-ui-react";
-// import Dog from "./img/dog.jpeg";
+import {
+  Container,
+  Grid,
+  Header,
+  Image,
+  Divider,
+  Segment
+} from "semantic-ui-react";
+import desktop0 from "./img/desktop0.png";
+import desktop1 from "./img/desktop1.png";
+import desktop2 from "./img/desktop2.png";
+import desktop3 from "./img/desktop3.png";
+import desktop4 from "./img/desktop4.png";
+import desktop5 from "./img/desktop5.png";
+import mobile1 from "./img/mobile1.png";
+import mobile2 from "./img/mobile2.png";
+import mobile3 from "./img/mobile3.png";
+import mobile4 from "./img/mobile4.png";
+
+const alignStyle = {
+  alignSelf: "center"
+};
 
 export default class Project1 extends Component {
   render() {
@@ -16,6 +36,11 @@ export default class Project1 extends Component {
             <Grid.Column>
               <Container text textAlign="justified">
                 <Grid>
+                  <Grid.Row>
+                    <Header size="huge" textAlign="left">
+                      Designing a Personal Portfolio Page
+                    </Header>
+                  </Grid.Row>
                   <Grid.Row>
                     <p>
                       As a requirement for the first project of the course, we
@@ -86,6 +111,41 @@ export default class Project1 extends Component {
                       people who visit the page by name, and also allowing some
                       interactions by mentioning the name.
                     </p>
+                  </Grid.Row>
+                  <Grid.Row>
+                    <Segment>
+                      <Image
+                        alt="The initial first time screen"
+                        src={desktop0}
+                        style={alignStyle}
+                      />
+                      <Divider />
+                      The initial first time screen
+                    </Segment>
+                  </Grid.Row>
+                  <Grid.Row>
+                    <Segment>
+                      <Image
+                        alt="How it looks with a text input"
+                        src={desktop1}
+                        style={alignStyle}
+                      />
+                      <Divider />
+                      How it looks with a text input
+                    </Segment>
+                  </Grid.Row>
+                  <Grid.Row>
+                    <Segment>
+                      <Image
+                        alt="The welcome page"
+                        src={desktop2}
+                        style={alignStyle}
+                      />
+                      <Divider />
+                      The welcome page
+                    </Segment>
+                  </Grid.Row>
+                  <Grid.Row>
                     <p>
                       The third thing that I decided on was the color scheme. I
                       decided that for the minimalist look I would stick with
@@ -111,6 +171,17 @@ export default class Project1 extends Component {
                     </p>
                   </Grid.Row>
                   <Grid.Row>
+                    <Segment>
+                      <Image
+                        alt="The content page"
+                        src={desktop3}
+                        style={alignStyle}
+                      />
+                      <Divider />
+                      The welcome page
+                    </Segment>
+                  </Grid.Row>
+                  <Grid.Row>
                     <Header size="medium">The Final Version</Header>
                     <p>
                       Not much was changed between the High Fidelity Prototype.
@@ -122,8 +193,59 @@ export default class Project1 extends Component {
                       The major change is replacing the links to the projects
                       with cards. So that the user actually has directly
                       presentable information about each project that they can
-                      see before clicking on the link to project.
+                      see before clicking on the link to project. And also
+                      replacing the whole gray color to a lighter, closer to
+                      white color as it seems to look better compared to a
+                      darkish gray. While still attempting to minimize the eye
+                      strain of pure black text on white background
                     </p>
+                  </Grid.Row>
+                  <Grid.Row>
+                    <Segment>
+                      <Image
+                        alt="Revamped welcome page"
+                        src={desktop4}
+                        style={alignStyle}
+                      />
+                      <Divider />
+                      The revamped welcome page, as you can see the standard
+                      links are replaced with bigger cards, making it easier to
+                      see and click and putting more focus on them
+                    </Segment>
+                  </Grid.Row>
+                  <Grid.Row>
+                    <Segment>
+                      <Image
+                        alt="Modified color scheme"
+                        src={desktop5}
+                        style={alignStyle}
+                      />
+                      <Divider />
+                      The modified color scheme and sidebar positioning.
+                    </Segment>
+                  </Grid.Row>
+                  <Grid.Row>
+                    <p>
+                      And the second change is optimizing the mobile version of
+                      the website such that it can be viewed in smaller screens
+                      such as phones. Note that the menu bar on the phone is on
+                      the top for the content part of the site, and the button
+                      to go back to top is by design only kept at the bottom, to
+                      kind of coerce readers like you to read through the whole
+                      text!
+                    </p>
+                  </Grid.Row>
+                  <Grid.Row columns={2} centered>
+                    <Segment>
+                      <Image.Group size="medium">
+                        <Image centered src={mobile1} />
+                        <Image centered src={mobile2} />
+                        <Image centered src={mobile3} />
+                        <Image centered src={mobile4} />
+                      </Image.Group>
+                      <Divider />
+                      Mobile Version Screenshots
+                    </Segment>
                   </Grid.Row>
                   {/*<Grid.Row columns={2}>*/}
                   {/*<Grid.Column>*/}

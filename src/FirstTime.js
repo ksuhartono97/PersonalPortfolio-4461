@@ -2,15 +2,10 @@ import React, { Component } from "react";
 import { Container, Header, Popup, Form, Grid } from "semantic-ui-react";
 // import "./FirstTime.css";
 
-const bgStyle = {
-  width: "100%",
-  height: "100vh"
-};
-
-const gridStyle = {
-  width: "inherit",
-  height: "inherit"
-};
+// const bgStyle = {
+//   width: "100%",
+//   height: "100vh"
+// };
 
 export default class FirstTime extends Component {
   constructor(props) {
@@ -37,6 +32,15 @@ export default class FirstTime extends Component {
   };
 
   render() {
+		const bgStyle = {
+			width: "100%",
+			height: "100vh"
+		};
+		const gridStyle = {
+			width: "inherit",
+			height: "inherit"
+		};
+
     return (
       <div className="MainContent">
         <Container style={bgStyle}>

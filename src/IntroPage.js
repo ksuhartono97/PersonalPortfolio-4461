@@ -13,21 +13,6 @@ import About from "./About";
 
 import browserHistory from "./History";
 
-const bgStyle = {
-  width: "100%",
-  height: "100vh",
-  // backgroundColor: "rgba(0,0,0,.1)",
-  backgroundImage: `url(${Background})`,
-  backgroundSize: "cover",
-  overflow: "hidden"
-};
-const bgColor = {
-  width: "inherit",
-  height: "inherit",
-  backgroundColor: "rgba(0,0,0,.7)",
-  overflow: "hidden"
-};
-
 export default class IntroPage extends Component {
   constructor(props) {
     super(props);
@@ -48,6 +33,21 @@ export default class IntroPage extends Component {
   };
 
   render() {
+    const bgStyle = {
+      width: "100%",
+      height: "100vh",
+      // backgroundColor: "rgba(0,0,0,.1)",
+      backgroundImage: `url(${Background})`,
+      backgroundSize: "cover",
+      overflow: "hidden"
+    };
+    const bgColor = {
+      width: "inherit",
+      height: "inherit",
+      backgroundColor: "rgba(0,0,0,.7)",
+      overflow: "hidden"
+    };
+
     return (
       <Container fluid>
         <div style={bgStyle}>
