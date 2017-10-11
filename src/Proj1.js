@@ -17,6 +17,7 @@ import mobile1 from "./img/mobile1.png";
 import mobile2 from "./img/mobile2.png";
 import mobile3 from "./img/mobile3.png";
 import mobile4 from "./img/mobile4.png";
+import wireframe from "./img/wireframe.jpg";
 
 const alignStyle = {
   alignSelf: "center"
@@ -62,6 +63,19 @@ export default class Project1 extends Component {
                       should’ve pursued the use of another tool or hand-draw the
                       layout.
                     </p>
+                  </Grid.Row>
+                  <Grid.Row>
+                    <Segment>
+                      <Image
+                        alt="Re-rendition of the wireframe"
+                        src={wireframe}
+                        style={alignStyle}
+                      />
+                      <Divider />
+                      Re-rendition of the wireframe
+                    </Segment>
+                  </Grid.Row>
+                  <Grid.Row>
                     <p>
                       In the wireframe design, as you can see in the picture, I
                       had initially chosen to use an infinite scrolling style
@@ -246,6 +260,20 @@ export default class Project1 extends Component {
                       <Divider />
                       Mobile Version Screenshots
                     </Segment>
+                  </Grid.Row>
+                  <Grid.Row>
+                    <p>
+                      In the end of all this, I believe that I myself have been able to
+                      pickup new techniques regarding designing this website. I learned
+                      to restructure content based on the target audience. I learned to
+                      optimize the website to cater to different devices, allowing a
+                      greater compatibility. I learned to design a simple UI so that
+                      people will not be too confused when using it. I learned how to
+                      structure content and join them together, and coloring and fonts
+                      to make things look more visually appealing. I believed that I
+                      have gained a greater understanding of the concept of delivering a
+                      human friendly interaction with this portfolio website project.
+                    </p>
                   </Grid.Row>
                   {/*<Grid.Row columns={2}>*/}
                   {/*<Grid.Column>*/}
