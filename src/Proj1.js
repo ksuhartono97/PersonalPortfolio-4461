@@ -94,6 +94,20 @@ export default class Project1 extends Component {
                   <Grid.Row>
                     <Header size="medium">The High-Fidelity Prototype</Header>
                     <p>
+                      I decided on implementing the site by making it with
+                      ReactJS, allowing it to have a dynamic UI and components
+                      that are more able to interact with the user. While also
+                      making it easier for me to build the content up and also
+                      makes it easy for me to add new content in the future.
+                      This also makes me able to use Heroku for hosting the
+                      site, as it is considered as a React App. Meaning that
+                      this also simplifies my website hosting process, making it
+                      really simple to push the content in if I ever need to.
+                      For the layouting and framework of the site, I used
+                      Semantic UI, which contains multiple different built in
+                      components that look nice for use in websites.
+                    </p>
+                    <p>
                       First things first, I decided that I wanted to follow a
                       design principle that I would keep my site clean and
                       minimalistic, with as few different contents as possible
@@ -204,6 +218,14 @@ export default class Project1 extends Component {
                       the UI.
                     </p>
                     <p>
+                      In building on top of the framework created in the High
+                      Fidelity Prototype, I added a router system to navigate
+                      through the site, allowing for a more natural use in
+                      navigating through the site by using React Router. This
+                      allowed me to configure pathnames for each of the screens
+                      of the page that I have.
+                    </p>
+                    <p>
                       The major change is replacing the links to the projects
                       with cards. So that the user actually has directly
                       presentable information about each project that they can
@@ -263,38 +285,20 @@ export default class Project1 extends Component {
                   </Grid.Row>
                   <Grid.Row>
                     <p>
-                      In the end of all this, I believe that I myself have been able to
-                      pickup new techniques regarding designing this website. I learned
-                      to restructure content based on the target audience. I learned to
-                      optimize the website to cater to different devices, allowing a
-                      greater compatibility. I learned to design a simple UI so that
-                      people will not be too confused when using it. I learned how to
-                      structure content and join them together, and coloring and fonts
-                      to make things look more visually appealing. I believed that I
-                      have gained a greater understanding of the concept of delivering a
-                      human friendly interaction with this portfolio website project.
+                      In the end of all this, I believe that I myself have been
+                      able to pickup new techniques regarding designing this
+                      website. I learned to restructure content based on the
+                      target audience. I learned to optimize the website to
+                      cater to different devices, allowing a greater
+                      compatibility. I learned to design a simple UI so that
+                      people will not be too confused when using it. I learned
+                      how to structure content and join them together, and
+                      coloring and fonts to make things look more visually
+                      appealing. I believed that I have gained a greater
+                      understanding of the concept of delivering a human
+                      friendly interaction with this portfolio website project.
                     </p>
                   </Grid.Row>
-                  {/*<Grid.Row columns={2}>*/}
-                  {/*<Grid.Column>*/}
-                  {/*<List bulleted>*/}
-                  {/*<List.Item>Loren</List.Item>*/}
-                  {/*<List.Item>Loren ipsum</List.Item>*/}
-                  {/*<List.Item>*/}
-                  {/*Loren ipsum*/}
-                  {/*<List.List>*/}
-                  {/*<List.Item>Loren ipsum</List.Item>*/}
-                  {/*<List.Item>Loren ipsum</List.Item>*/}
-                  {/*<List.Item>Loren ipsum</List.Item>*/}
-                  {/*</List.List>*/}
-                  {/*</List.Item>*/}
-                  {/*<List.Item>Loren ipsum dolor sit</List.Item>*/}
-                  {/*</List>*/}
-                  {/*</Grid.Column>*/}
-                  {/*<Grid.Column>*/}
-                  {/*<Image src={Dog} fluid />*/}
-                  {/*</Grid.Column>*/}
-                  {/*</Grid.Row>*/}
                 </Grid>
               </Container>
             </Grid.Column>
