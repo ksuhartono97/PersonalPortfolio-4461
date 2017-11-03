@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { Container, Grid, Menu, Message, Button } from "semantic-ui-react";
 import Project1 from "./Proj1";
 import { Route, Link } from "react-router-dom";
-import Scroll from "react-scroll"; // Imports all Mixins
+import Scroll from "react-scroll";
+import Project2 from "./Proj2"; // Imports all Mixins
 // import {scroller} from 'react-scroll'; //Imports scroller mixin, can use as scroller.scrollTo()
 
 let Events = Scroll.Events;
@@ -99,10 +100,7 @@ export default class MainContentSite extends Component {
               <Route
                 path="/proj/proj2"
                 component={() => (
-                  <Message>
-                    <Message.Header>TO BE RELEASED</Message.Header>
-                    <p>Coming soon.</p>
-                  </Message>
+                  <Project2/>
                 )}
               />
               <Route

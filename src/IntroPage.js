@@ -113,7 +113,7 @@ export default class IntroPage extends Component {
                               // image={Dog2}
                               header="Project 2"
                               meta="Redesigning Light"
-                              description="To be updated on release"
+                              description="Light at the End of the Tunnel"
                               centered
                               onClick={this.handleItemClick}
                             />
