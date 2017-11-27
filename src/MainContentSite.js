@@ -3,7 +3,8 @@ import { Container, Grid, Menu, Message, Button } from "semantic-ui-react";
 import Project1 from "./Proj1";
 import { Route, Link } from "react-router-dom";
 import Scroll from "react-scroll";
-import Project2 from "./Proj2"; // Imports all Mixins
+import Project2 from "./Proj2";
+import Project3 from "./Proj3"; // Imports all Mixins
 // import {scroller} from 'react-scroll'; //Imports scroller mixin, can use as scroller.scrollTo()
 
 let Events = Scroll.Events;
@@ -97,21 +98,8 @@ export default class MainContentSite extends Component {
             </Grid.Column>
             <Grid.Column width={8}>
               <Route path="/proj/proj1" component={() => <Project1 />} />
-              <Route
-                path="/proj/proj2"
-                component={() => (
-                  <Project2/>
-                )}
-              />
-              <Route
-                path="/proj/proj3"
-                component={() => (
-                  <Message>
-                    <Message.Header>TO BE RELEASED</Message.Header>
-                    <p>Coming soon.</p>
-                  </Message>
-                )}
-              />
+              <Route path="/proj/proj2" component={() => <Project2 />} />
+              <Route path="/proj/proj3" component={() => <Project3 />} />
             </Grid.Column>
             <Grid.Column width={4}>{/*//Placeholder*/}</Grid.Column>
           </Grid.Row>
@@ -153,24 +141,8 @@ export default class MainContentSite extends Component {
               {/*</Segment>*/}
               {/*</Sticky>*/}
               <Route path="/proj/proj1" component={() => <Project1 />} />
-              <Route
-                path="/proj/proj2"
-                component={() => (
-                  <Message>
-                    <Message.Header>TO BE RELEASED</Message.Header>
-                    <p>Coming soon.</p>
-                  </Message>
-                )}
-              />
-              <Route
-                path="/proj/proj3"
-                component={() => (
-                  <Message>
-                    <Message.Header>TO BE RELEASED</Message.Header>
-                    <p>Coming soon.</p>
-                  </Message>
-                )}
-              />
+              <Route path="/proj/proj2" component={() => <Project2 />} />
+              <Route path="/proj/proj3" component={() => <Project3 />} />
             </Grid.Column>
           </Grid.Row>
           <Grid.Row only="mobile" verticalAlign="middle" columns={5} centered>

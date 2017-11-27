@@ -122,7 +122,7 @@ export default class IntroPage extends Component {
                               // image={Dog3}
                               header="Project 3"
                               meta="Human-Robot	Interaction"
-                              description="To be updated on release"
+                              description="Automatic Food Service"
                               centered
                               onClick={this.handleItemClick}
                             />
