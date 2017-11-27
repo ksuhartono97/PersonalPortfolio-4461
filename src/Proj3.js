@@ -9,6 +9,13 @@ import {
   List
 } from "semantic-ui-react";
 
+import im1 from "./img/Project3/observe.png";
+import im2 from "./img/Project3/interview.png";
+import im3 from "./img/Project3/sboard1.png";
+import im4 from "./img/Project3/sboard2.png";
+import im5 from "./img/Project3/editing.png";
+import im6 from "./img/Project3/usability.png";
+
 const alignStyle = {
   alignSelf: "center"
 };
@@ -73,6 +80,22 @@ export default class Project3 extends Component {
                       main problems that we’ve identified that needs to be
                       solved by our robot.
                     </p>
+                  </Grid.Row>
+                  <Grid.Row>
+                    <Segment>
+                      <Image alt="Observing" src={im1} style={alignStyle} />
+                      <Divider />
+                      Observing the crowd in McDonalds
+                    </Segment>
+                  </Grid.Row>
+                  <Grid.Row>
+                    <Segment>
+                      <Image alt="Interviewing" src={im2} style={alignStyle} />
+                      <Divider />
+                      Interviews with people
+                    </Segment>
+                  </Grid.Row>
+                  <Grid.Row>
                     <p>
                       To reconfirm our findings from the observation, we
                       conducted some interviews with some people. These people
@@ -120,6 +143,22 @@ export default class Project3 extends Component {
                       a cashier. We did this by storyboarding an interaction
                       with a customer.
                     </p>
+                  </Grid.Row>
+                  <Grid.Row>
+                    <Segment>
+                      <Image alt="Storyboard" src={im3} style={alignStyle} />
+                      <Divider />
+                      Storyboard 1
+                    </Segment>
+                  </Grid.Row>
+                  <Grid.Row>
+                    <Segment>
+                      <Image alt="Storyboard" src={im4} style={alignStyle} />
+                      <Divider />
+                      Storyboard 2
+                    </Segment>
+                  </Grid.Row>
+                  <Grid.Row>
                     <p>
                       From the storyboard, we could see the steps that were
                       needed, so we defined it for our robot. These steps are:
@@ -148,6 +187,13 @@ export default class Project3 extends Component {
                     </p>
                   </Grid.Row>
                   <Grid.Row>
+                    <Segment>
+                      <Image alt="Programming" src={im5} style={alignStyle} />
+                      <Divider />
+                      Programming the robot
+                    </Segment>
+                  </Grid.Row>
+                  <Grid.Row>
                     <Header size="medium">Usability Testing</Header>
                     <p>
                       The next part was to test the robot in a use-case
@@ -168,6 +214,13 @@ export default class Project3 extends Component {
                       problems and thus this became the final iteration of our
                       robot.
                     </p>
+                  </Grid.Row>
+                  <Grid.Row>
+                    <Segment>
+                      <Image alt="Usability" src={im6} style={alignStyle} />
+                      <Divider />
+                      Usability testing
+                    </Segment>
                   </Grid.Row>
                   <Grid.Row>
                     <Header size="medium">Reflection</Header>
